@@ -1,0 +1,72 @@
+.pageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1; /* Faz o container ocupar o espaço vertical disponível */
+  padding: 2rem;
+}
+
+.formWrapper {
+  background-color: var(--surface-color);
+  padding: 2.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  width: 100%;
+  max-width: 420px; /* Aumentei um pouco para mais conforto */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Um detalhe sutil */
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.label {
+  font-size: 0.9rem;
+  color: var(--text-color-secondary);
+}
+
+.input {
+  background-color: var(--background-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 0.75rem;
+  color: var(--text-color);
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px var(--primary-color-translucent);
+}
+
+.errorMessage {
+  color: #ff6b6b; /* Um vermelho amigável para erros */
+  font-size: 0.8rem;
+  min-height: 1rem; /* Evita que o layout mude quando o erro aparece */
+}
+
+.link {
+  color: var(--primary-color);
+  text-decoration: none;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.separator {
+  text-align: center;
+  color: var(--text-color-secondary);
+  font-size: 0.8rem;
+  margin: 0.5rem 0;
+}

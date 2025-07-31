@@ -1,0 +1,81 @@
+/* c:/Users/Tomaz.Oliveira/Desktop/newproject/frontend/src/pages/EventFormPage.module.css */
+.container {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #2c2c2e;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  color: #eee;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputGroup label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #bbb;
+}
+
+.inputGroup input,
+.inputGroup textarea {
+  padding: 0.8rem;
+  border: 1px solid #555;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: inherit;
+  background-color: #3e3e42;
+  color: #eee;
+}
+
+.inputGroup textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.submitButton {
+  padding: 0.9rem;
+  border: none;
+  background-color: #2ecc71;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 1rem;
+}
+
+.submitButton:hover:not(:disabled) {
+  background-color: #27ae60;
+}
+
+.submitButton:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #e74c3c;
+  background-color: #fbecec;
+  border: 1px solid #e74c3c;
+  padding: 0.75rem;
+  border-radius: 5px;
+  text-align: center;
+}

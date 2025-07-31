@@ -1,0 +1,42 @@
+{
+  "name": "newproject-backend",
+  "version": "1.0.0",
+  "description": "Backend for the Event Management System",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node backend/src/server.js",
+    "dev": "nodemon backend/src/server.js",
+    "test": "jest --detectOpenHandles",
+    "build": "npm run build --prefix frontend",
+    "postinstall": "npm install --prefix backend && npm install --prefix frontend"
+  },
+  "jest": {
+    "setupFiles": [
+      "<rootDir>/backend/src/tests/setup.js"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "express-validator": "^7.2.1",
+    "google-auth-library": "^10.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.18.0",
+    "mongoose": "^8.17.0",
+    "passport": "^0.7.0",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-jwt": "^4.0.1",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "mongodb-memory-server": "^10.1.4",
+    "nodemon": "^3.1.0",
+    "supertest": "^7.0.0"
+  }
+}

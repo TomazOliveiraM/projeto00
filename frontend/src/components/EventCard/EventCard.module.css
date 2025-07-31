@@ -1,0 +1,67 @@
+.card {
+  background-color: var(--surface-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #2a2a2a;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.cardContent {
+  padding: 1.5rem;
+}
+
+.cardTitle {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+
+.cardCategory {
+  background-color: var(--secondary-color);
+  color: #121212;
+  padding: 0.2rem 0.6rem;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.cardDate {
+  color: var(--text-color-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.cardDescription {
+  color: var(--text-color-secondary);
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.detailsButton {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.2rem;
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: var(--border-radius);
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.2s;
+}
+
+.detailsButton:hover {
+  background-color: #a052d3;
+  text-decoration: none;
+}

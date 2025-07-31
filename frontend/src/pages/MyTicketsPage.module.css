@@ -1,0 +1,31 @@
+.container {
+  padding: 2rem 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.ticketsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.loading,
+.error,
+.noTickets {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 4rem;
+  color: var(--text-color-secondary);
+}
+
+.error {
+  color: #ff6b6b;
+}

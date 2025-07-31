@@ -1,0 +1,191 @@
+/* --- Estilos da Tela de Seleção de Conta --- */
+.role-selection-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 140px); /* Desconta header/footer */
+  text-align: center;
+  padding: 2rem;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.role-selection-container h2 {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.role-selection-container p {
+  font-size: 1.2rem;
+  color: var(--text-color-secondary);
+  margin-bottom: 3rem;
+  max-width: 500px;
+}
+
+.role-options {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.role-card {
+  background-color: var(--surface-color);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  width: 280px;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  box-shadow: var(--box-shadow);
+}
+
+.role-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  border-color: var(--secondary-color);
+}
+
+.role-card h3 {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.role-card p {
+  font-size: 1rem;
+  color: var(--text-color-secondary);
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+/* --- Estilos do Formulário de Cadastro (similar ao LoginPage) --- */
+.register-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 140px);
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.register-form-wrapper {
+  background-color: var(--surface-color);
+  padding: 2.5rem 3rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  width: 100%;
+  max-width: 500px; /* Um pouco mais largo para mais campos */
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.register-form-wrapper h2 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  color: var(--text-color);
+}
+
+.role-highlight {
+  color: var(--secondary-color);
+  text-transform: capitalize;
+}
+
+.register-form-wrapper p {
+  margin-bottom: 2rem;
+  color: var(--text-color-secondary);
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--text-color-secondary);
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  background-color: var(--background-color);
+  border: 1px solid #444;
+  border-radius: var(--border-radius);
+  color: var(--text-color);
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 0 3px rgba(37, 117, 252, 0.25);
+}
+
+.register-button {
+  width: 100%;
+  padding: 0.9rem;
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  margin-top: 1rem;
+}
+
+.register-button:hover:not(:disabled) {
+  opacity: 0.9;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.register-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.extra-links {
+  margin-top: 1.5rem;
+  color: var(--text-color-secondary);
+}
+
+.extra-links p {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.extra-links a {
+  color: var(--secondary-color);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.extra-links a:hover {
+  text-decoration: underline;
+}
+
+.error-message {
+  color: #ff4d4d;
+  background-color: rgba(255, 77, 77, 0.1);
+  border: 1px solid rgba(255, 77, 77, 0.2);
+  padding: 0.8rem;
+  border-radius: var(--border-radius);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}

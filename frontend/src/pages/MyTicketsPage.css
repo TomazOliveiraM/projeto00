@@ -1,0 +1,130 @@
+.page-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.page-header {
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  margin: 0 0 0.5rem 0;
+}
+
+.page-header p {
+  font-size: 1.1rem;
+  color: var(--text-color-secondary);
+  margin: 0;
+}
+
+.tickets-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.ticket-card {
+  background-color: var(--surface-color);
+  border-radius: var(--border-radius);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.ticket-card:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.ticket-event-info h3 {
+  font-size: 1.4rem;
+  color: var(--text-color);
+  margin: 0 0 0.5rem 0;
+}
+
+.ticket-event-info p {
+  color: var(--text-color-secondary);
+  margin: 0.2rem 0;
+}
+
+.ticket-details {
+  text-align: right;
+}
+
+.ticket-details p {
+  margin: 0.2rem 0;
+  font-size: 0.9rem;
+  color: var(--text-color-secondary);
+}
+
+.ticket-details .status-confirmado {
+  color: #4caf50; /* Verde */
+  font-weight: bold;
+}
+
+.ticket-details .status-pendente {
+  color: #ff9800; /* Laranja */
+  font-weight: bold;
+}
+
+.ticket-details .status-cancelado {
+  color: #f44336; /* Vermelho */
+  font-weight: bold;
+}
+
+.ticket-view-event {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: var(--border-radius);
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.ticket-view-event:hover {
+  background-color: var(--secondary-color);
+}
+
+.no-tickets-message {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: var(--surface-color);
+  border-radius: var(--border-radius);
+}
+
+.no-tickets-message h3 {
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+
+.no-tickets-message p {
+  color: var(--text-color-secondary);
+  margin-bottom: 2rem;
+}
+
+.explore-button {
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  font-weight: bold;
+  transition: opacity 0.3s ease;
+}
+
+.explore-button:hover {
+  opacity: 0.9;
+}

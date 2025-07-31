@@ -1,0 +1,85 @@
+.adminContainer {
+    padding: 1rem;
+}
+
+.adminContainer h2 {
+    margin-top: 0;
+}
+
+.usersTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+    background-color: var(--surface-color);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    overflow: hidden; /* Garante que o border-radius seja aplicado nos cantos da tabela */
+}
+
+.usersTable th,
+.usersTable td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #a35757;
+}
+
+.usersTable th {
+    background-color: #2a2a2a;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.usersTable tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.usersTable tbody tr:hover {
+    background-color: #2c2c2c;
+}
+
+.actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.actions button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9em;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+}
+
+.editButton {
+    background-color: var(--secondary-color);
+}
+
+.deleteButton {
+    background-color: #e53e3e; /* Cor vermelha para ações de perigo */
+}
+
+.error {
+    color: #e53e3e;
+    background-color: rgba(229, 62, 62, 0.1);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+}
+
+.roleSelect {
+    padding: 0.4rem 0.6rem;
+    border-radius: 5px;
+    border: 1px solid #555;
+    background-color: #333;
+    color: var(--text-color);
+    font-size: 0.9em;
+}
+
+.saveButton {
+    background-color: #4CAF50; /* Green */
+}
+
+.cancelButton {
+    background-color: #757575; /* Gray */
+}

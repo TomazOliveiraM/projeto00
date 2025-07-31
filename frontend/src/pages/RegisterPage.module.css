@@ -1,0 +1,95 @@
+/* c:/Users/Tomaz.Oliveira/Desktop/newproject/frontend/src/pages/RegisterPage.module.css */
+.registerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 120px);
+  padding: 2rem;
+  /* O fundo é herdado do layout */
+}
+
+.registerBox {
+  background-color: #2c2c2e;
+  padding: 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 1.5rem;
+  color: #eee;
+  font-size: 2rem;
+}
+
+.error {
+  color: #e74c3c;
+  background-color: #fbecec;
+  border: 1px solid #e74c3c;
+  padding: 0.75rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.inputGroup {
+  text-align: left;
+}
+
+.inputGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #bbb;
+  font-weight: 600;
+}
+
+.inputGroup input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #555;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #3e3e42;
+  color: #eee;
+}
+
+.registerButton {
+  padding: 0.9rem;
+  border: none;
+  background-color: #3498db;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 1rem;
+}
+
+.registerButton:hover:not(:disabled) {
+  background-color: #2980b9;
+}
+
+.registerButton:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.loginLink {
+  margin-top: 1.5rem;
+  color: #bbb;
+}
+
+.loginLink a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+}
