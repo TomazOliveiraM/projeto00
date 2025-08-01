@@ -1,8 +1,8 @@
 const request = require('supertest');
-const app = require('../app'); // Supondo que seu app express seja exportado de src/app.js
+const app = require('./src/app'); // Supondo que seu app express seja exportado de src/app.js
 const mongoose = require('mongoose');
-const Event = require('../models/Event');
-const User = require('../models/User');
+const Event = require('./src/models/Event');
+const User = require('./src/models/User');
 const jwt = require('jsonwebtoken');
 
 let organizerToken;
